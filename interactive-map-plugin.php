@@ -3,13 +3,11 @@
 /*
 Plugin Name: Interactive Map Plugin
 Description: A plugin to create interactive maps with city reviews.
-Version: 1.5
+Version: 2.1.0
 Author: Clirim Kurti
 Text Domain: interactive-map
 Domain Path: /languages
 */
-
-
 
 if (!defined('ABSPATH')) {
     exit;
@@ -41,6 +39,16 @@ function imp_add_manifest()
     echo '<link rel="manifest" href="' . IMP_PLUGIN_URL . 'public/manifest.json">';
     echo '<meta name="theme-color" content="#4a90e2">';
 }
+
+use YahnisElsts\PluginUpdateChecker\v5p4\PucFactory;
+
+require_once plugin_dir_path(__FILE__) . 'lib/plugin-update-checker/plugin-update-checker.php';
+
+$updateChecker = PucFactory::buildUpdateChecker(
+    'https://ClirimKurti.github.io/plugin-update-info/plugin-info.json', // URL to the JSON file
+    __FILE__, // Full path to the main plugin file
+    'interactive-map' // Plugin slug (matches slug in JSON file)
+);
 
 
 // if (!defined('ABSPATH')) {
