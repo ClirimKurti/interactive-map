@@ -3,7 +3,7 @@
 /*
 Plugin Name: Interactive Map Plugin
 Description: A plugin to create interactive maps with city reviews.
-Version: 2.1.0
+Version: 2.2.2
 Author: Clirim Kurti
 Text Domain: interactive-map
 Domain Path: /languages
