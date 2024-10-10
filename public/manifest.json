@@ -1,0 +1,22 @@
+{
+    "name": "Interactive Map Plugin",
+    "short_name": "Map Plugin",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4a90e2",
+    "description": "A plugin to create interactive maps with city reviews.",
+    "icons": [
+      {
+        "src": "/wp-content/plugins/interactive-map/public/icons/icon-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/wp-content/plugins/interactive-map/public/icons/icon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
